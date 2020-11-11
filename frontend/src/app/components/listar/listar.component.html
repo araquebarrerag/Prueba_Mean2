@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Ciudades y Capitales</h4>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Capital</th>
+                    <th>Operacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pais of paises">
+                    <td>{{pais._id}}</td>
+                    <td>{{pais.nombre}}</td>
+                    <td>{{pais.capital}}</td>
+                    <td><button class="btn btn-danger" (click)="Eliminar(pais)">Eliminar</button>
+                        <button class="btn btn-primary" (click)="Actualizar(pais)">Editar</button>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
