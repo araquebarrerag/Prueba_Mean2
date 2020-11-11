@@ -19,4 +19,4 @@ app.use(bodyParser.json());
 app.use("/", appRoutes);
 http.createServer(app).listen(port);
 
-console.log("Backend corriendo en el puero:", port);
+console.log("Backend corriendo en el puerto:", port);
